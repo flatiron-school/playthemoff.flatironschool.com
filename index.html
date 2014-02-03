@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Play Them Off Flatiron School</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <audio id="player" controls>
+    <source src="audio/classical.mp3" type="audio/mpeg">
+    <source src="audio/classical.ogg" type="audio/ogg">
+  </audio>
+
+  <div>
+    <h1>Countdown</h1>
+    <span id="cd_h">00</span>:
+    <span id="cd_m">00</span>:
+    <span id="cd_s">00</span>:
+    <span id="cd_ms">00</span>
+    <br/>
+    <br/>
+    <input type="button" value="Start" id="cd_start" />
+    <input type="button" value="Pause" id="cd_pause" />
+    <input type="button" value="Stop"  id="cd_stop" />
+    <input type="button" value="Reset" id="cd_reset" />
+    <br/>
+    <br/>
+    <input type="text" value="15" id="cd_seconds" />
+    secs
+    <br/>
+    <br/>
+    <span id="cd_status">Idle</span>
+  </div>
+  
+  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script src="js/timer.js"></script>
+
+</body>
+</html>
