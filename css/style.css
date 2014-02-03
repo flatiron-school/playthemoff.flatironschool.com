@@ -1,24 +1,35 @@
+body {
+    text-align: center;
+}
+
 input {
-    padding:4px;}
+    padding:4px;
+}
 
-    input[type="text"] {
-        width:50px;
-        text-align:center;}    
+input[type="text"] {
+    width:50px;
+    text-align:center;
+}    
 
-    div {
-        font-family:Arial,Verdana;
-        font-size:12px;
-        width:360px;
-        background-color:#f2f2f2;
-        padding:16px;
-        border:solid 1px #e5e5e5;
-        text-align:center;
-        margin:0 0 16px 0;}
+div {
+    font-family:Arial,Verdana;
+    font-size:12px;
+    background-color:#f2f2f2;
+    padding:16px;
+    border:solid 1px #e5e5e5;
+    text-align:center;
+    margin:0 0 16px 0;
+}
 
-    div span:last-child {
-    color:green;}
+.colon {
+   font-size:10em;
+}
 
-    h1 {
-        font-size:14px;
-        margin:0 0 8px 0;
-    }
+h1 {
+    font-size:14px;
+    margin:0 0 8px 0;
+}
+
+#cd_h, #cd_m, #cd_s, #cd_ms {
+    font-size: 20em;
+}
