@@ -86,7 +86,9 @@ $(document).ready(function() {
                     $.APP.state = 'pause';
                     $('#' + $.APP.dir + '_status').html('Paused');
 
-                    
+                    //pause audio player
+                    player.pause();
+    
                 },
                 
                 stopTimer : function() {
@@ -97,6 +99,10 @@ $(document).ready(function() {
                     // set state
                     $.APP.state = 'stop';
                     $('#' + $.APP.dir + '_status').html('Stopped');
+
+                    //stop player & cue at beginning of recording
+                    player.pause();
+                    player.load();
 
                 },
                 
@@ -111,6 +117,10 @@ $(document).ready(function() {
                     // set state
                     $.APP.state = 'reset';  
                     $('#' + $.APP.dir + '_status').html('Reset & Idle again');
+
+                    //stop player & cue at beginning of recording
+                    player.pause();
+                    player.load();
                     
                 },
                 
